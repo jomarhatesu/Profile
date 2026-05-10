@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jomar | IT Profile</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(to right,#071922,#123847);
+    color:white;
+    padding:40px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    background:rgba(32,52,63,0.96);
+    border-radius:30px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.avatar{
+    width:75px;
+    height:75px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.12);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:35px;
+    font-weight:bold;
+}
+
+.profile-text h1{
+    font-size:42px;
+}
+
+.profile-text p{
+    opacity:0.8;
+    margin-top:5px;
+}
+
+.time-box{
+    background:rgba(255,255,255,0.08);
+    padding:18px 25px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.time{
+    font-size:30px;
+    font-weight:bold;
+}
+
+.date{
+    margin-top:5px;
+    opacity:0.8;
+}
+
+.section-title{
+    margin-top:40px;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.card{
+    background:#f4f4f4;
+    color:#222;
+    border-radius:25px;
+    padding:28px;
+    margin-bottom:20px;
+}
+
+.card h2{
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.card p{
+    line-height:1.7;
+    font-size:16px;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+.info-box{
+    background:rgba(255,255,255,0.08);
+    padding:20px;
+    border-radius:18px;
+}
+
+.info-box h3{
+    margin-bottom:10px;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+.skill{
+    background:rgba(255,255,255,0.08);
+    padding:20px;
+    border-radius:18px;
+}
+
+.skill h3{
+    margin-bottom:10px;
+}
+
+ul{
+    padding-left:20px;
+    line-height:1.8;
+}
+
+.footer{
+    margin-top:35px;
+    text-align:center;
+    opacity:0.7;
+    font-size:14px;
+}
+
+@media(max-width:700px){
+
+    body{
+        padding:20px;
+    }
+
+    .profile-text h1{
+        font-size:30px;
+    }
+
+    .time{
+        font-size:24px;
+    }
+
+    .section-title{
+        font-size:24px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="top">
+
+        <div class="profile">
+
+            <div class="avatar">J</div>
+
+            <div class="profile-text">
+                <h1>Jomar</h1>
+                <p>Associate in Computer Technology Graduate</p>
+            </div>
+
+        </div>
+
+        <div class="time-box">
+            <div class="time" id="clock">00:00:00</div>
+            <div class="date" id="date">Loading...</div>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">Professional Summary</h2>
+
+    <div class="card">
+        <h2>Future IT Professional</h2>
+
+        <p>
+            Motivated and detail-oriented Associate in Computer Technology (ACT) graduate with strong foundational knowledge in computer systems, technical troubleshooting, programming, and IT operations. Passionate about learning new technologies and improving technical skills while contributing to efficient and reliable support solutions.
+        </p>
+    </div>
+
+    <h2 class="section-title">Career Objective</h2>
+
+    <div class="card">
+
+        <p>
+            To secure an entry-level position where I can apply my knowledge in technical support, computer operations, and programming while gaining valuable industry experience and continuously growing as an IT professional.
+        </p>
+
+    </div>
+
+    <h2 class="section-title">Education</h2>
+
+    <div class="info-grid">
+
+        <div class="info-box">
+            <h3>Datamex College of Saint Adeline</h3>
+            <p>Associate in Computer Technology (ACT)</p>
+            <p>Graduated 2026</p>
+        </div>
+
+        <div class="info-box">
+            <h3>Justice Cecilia Muña Palma SHS</h3>
+            <p>Industrial Arts (TVL)</p>
+            <p>2022 - 2024</p>
+        </div>
+
+        <div class="info-box">
+            <h3>Justice Cecilia Muña Palma HS</h3>
+            <p>Junior High School</p>
+            <p>2021 - 2022</p>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">Internship Experience</h2>
+
+    <div class="card">
+
+        <h2>Concentrix</h2>
+
+        <ul>
+            <li>Provided technical support for hardware and software issues.</li>
+            <li>Performed system setup, installation, and configuration.</li>
+            <li>Assisted users with password resets and account support.</li>
+            <li>Managed and tracked IT assets and equipment.</li>
+            <li>Logged technical issues using a ticketing system.</li>
+            <li>Performed maintenance, updates, and backup support.</li>
+        </ul>
+
+    </div>
+
+    <h2 class="section-title">Core Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill">
+            <h3>Technical Support</h3>
+            <p>Troubleshooting software and system-related issues.</p>
+        </div>
+
+        <div class="skill">
+            <h3>Computer Operations</h3>
+            <p>Windows OS, file management, and software installation.</p>
+        </div>
+
+        <div class="skill">
+            <h3>Microsoft Office</h3>
+            <p>Word, Excel, and PowerPoint productivity tools.</p>
+        </div>
+
+        <div class="skill">
+            <h3>Programming</h3>
+            <p>C, C++, C#, debugging, loops, and logic building.</p>
+        </div>
+
+        <div class="skill">
+            <h3>Database Management</h3>
+            <p>Basic MySQL queries and database operations.</p>
+        </div>
+
+        <div class="skill">
+            <h3>Web Development</h3>
+            <p>HTML & CSS for simple responsive webpages.</p>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">Additional Strengths</h2>
+
+    <div class="card">
+
+        <ul>
+            <li>Fast learner and adaptable to new technologies</li>
+            <li>Strong attention to detail</li>
+            <li>Good communication skills</li>
+            <li>Can work independently and in teams</li>
+            <li>Willing to learn and improve continuously</li>
+        </ul>
+
+    </div>
+
+    <h2 class="section-title">Languages</h2>
+
+    <div class="info-grid">
+
+        <div class="info-box">
+            <h3>English</h3>
+            <p>Professional Working Proficiency</p>
+        </div>
+
+        <div class="info-box">
+            <h3>Filipino</h3>
+            <p>Native Language</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Jomar • Personal IT Portfolio Dashboard
+    </div>
+
+</div>
+
+<script>
+
+function updateClock(){
+
+    const now = new Date();
+
+    document.getElementById("clock").innerHTML =
+        now.toLocaleTimeString();
+
+    document.getElementById("date").innerHTML =
+        now.toDateString();
+}
+
+setInterval(updateClock,1000);
+
+updateClock();
+
+</script>
+
+</body>
+</html>
